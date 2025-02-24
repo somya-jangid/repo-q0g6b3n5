@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">TrainBooking</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Book Tickets</a></li>
+                    <li><a href="mybookings.html">My Bookings</a></li>
+                    <li><a href="pnrstatus.html">PNR Status</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="auth">
+                    <a href="login.html" class="btn login-btn">Login/Sign Up</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('https://unsplash.com/photos/a-train-traveling-down-train-tracks-next-to-a-forest-H3Ekf0j-Sg4');">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Book Your Train Tickets Easily</h1>
+                <p>Find the best deals and travel in comfort.</p>
+                <form class="search-form glass">
+                    <div class="form-group">
+                        <label><i class="icon-station"></i></label>
+                        <input type="text" placeholder="From" name="from" autocomplete="on">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="icon-station"></i></label>
+                        <input type="text" placeholder="To" name="to" autocomplete="on">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="icon-calendar"></i></label>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="icon-class"></i></label>
+                        <select name="class">
+                            <option value="all">All Classes</option>
+                            <option value="sleeper">Sleeper</option>
+                            <option value="ac">AC Chair Car</option>
+                        </select>
+                    </div>
+                    <div class="form-group passengers">
+                        <label><i class="icon-user"></i></label>
+                        <input type="number" name="passengers" value="1" min="1">
+                    </div>
+                    <button type="submit" class="btn search-btn"><i class="icon-search"></i> Search Trains</button>
+                </form>
+            </div>
+        </section>
+        <!-- Popular Routes -->
+        <section class="popular-routes">
+            <div class="container">
+                <h2>Popular Routes</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://www.pexels.com/photo/railroad-tracks-in-city-during-nighttime-2566121/" alt="Mumbai to Delhi">
+                        <div class="card-content">
+                            <h3>Mumbai to Delhi</h3>
+                            <a href="index.html" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://unsplash.com/photos/brown-and-black-train-on-rail-tracks-during-daytime-h-bl-w-Fp-g" alt="Goa to Bangalore">
+                        <div class="card-content">
+                            <h3>Goa to Bangalore</h3>
+                            <a href="index.html" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.pexels.com/photo/train-on-railway-under-clear-sky-210243/" alt="Chennai to Kolkata">
+                        <div class="card-content">
+                            <h3>Chennai to Kolkata</h3>
+                            <a href="index.html" class="btn book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <i class="icon-check"></i>
+                        <h3>Easy Booking</h3>
+                        <p>Book your tickets with a few clicks.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="icon-shield"></i>
+                        <h3>Secure Payments</h3>
+                        <p>Your transactions are safe with us.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="icon-support"></i>
+                        <h3>24/7 Support</h3>
+                        <p>We are here to assist you anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <p>© 2023 TrainBooking. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-twitter"></i></a>
+                <a href="#"><i class="icon-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
