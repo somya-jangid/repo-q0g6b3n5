@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">TrainBooking</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Book Tickets</a></li>
+                    <li><a href="mybookings.html">My Bookings</a></li>
+                    <li><a href="pnrstatus.html">PNR Status</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="auth">
+                    <a href="login.html" class="btn login-btn">Login/Sign Up</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="my-bookings">
+            <h1>My Bookings</h1>
+            <!-- If not logged in, show login/signup form with glass effect -->
+            <div class="login-reminder glass">
+                <p>Please <a href="login.html">login</a> to view your bookings.</p>
+            </div>
+            <!-- Sample table for bookings (visible when logged in) -->
+            <table class="bookings-table">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Train Name</th>
+                        <th>From/To</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Class</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#12345</td>
+                        <td>Express Line</td>
+                        <td>Mumbai - Delhi</td>
+                        <td>2023-10-10</td>
+                        <td>10:00 AM</td>
+                        <td>AC</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                        <td><button class="btn details-btn">View Details</button> <button class="btn cancel-btn">Cancel Booking</button></td>
+                    </tr>
+                    <tr>
+                        <td>#67890</td>
+                        <td>Local Runner</td>
+                        <td>Chennai - Kolkata</td>
+                        <td>2023-10-15</td>
+                        <td>02:00 PM</td>
+                        <td>Sleeper</td>
+                        <td><span class="status waiting">Waiting List</span></td>
+                        <td><button class="btn details-btn">View Details</button> <button class="btn cancel-btn">Cancel Booking</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <p>© 2023 TrainBooking. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-twitter"></i></a>
+                <a href="#"><i class="icon-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
