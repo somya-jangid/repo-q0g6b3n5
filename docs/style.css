@@ -1,0 +1,387 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #339dff;
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E0E0E0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #E0E0E0;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+}
+
+.auth .login-btn {
+    margin-left: 15px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #E0E0E0;
+}
+
+/***** Hero Section *****/
+.hero {
+    position: relative;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #A0A0A0;
+    margin-bottom: 1rem;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.search-form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #339dff;
+}
+
+/***** Glass Effect *****/
+.glass {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/***** Cards *****/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-btn, .offer-btn {
+    background-color: #28A745;
+    margin-top: 10px;
+}
+
+/***** Sections *****/
+section {
+    padding: 40px 0;
+}
+
+.why-choose-us .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+/***** Tables *****/
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bookings-table th, .bookings-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.status.confirmed {
+    color: #28A745;
+}
+
+.status.waiting {
+    color: orange;
+}
+
+.status.canceled {
+    color: #DC3545;
+}
+
+/***** Forms *****/
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+}
+
+/***** Footer *****/
+footer {
+    background-color: #1E1E1E;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container p {
+    color: #A0A0A0;
+}
+
+.social-icons a {
+    color: #A0A0A0;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+/***** Auth Page *****/
+.login-page {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-container {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+    margin: 15px 0;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.auth-btn {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #339dff;
+}
+
+/***** Responsive Design *****/
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1E1E1E;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/***** Animations *****/
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
